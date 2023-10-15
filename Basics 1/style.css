@@ -1,0 +1,22 @@
+/*
+    This is how u add comments
+*/
+
+header , footer {
+    text-align: center;
+    background-color: purple;
+    color: white;
+}
+
+article h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article div {
+    color: grey;
+}
+
+.Date {
+    font-style: italic;
+
+}
