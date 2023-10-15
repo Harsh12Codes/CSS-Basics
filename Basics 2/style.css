@@ -1,0 +1,21 @@
+header h1 {
+    text-align: center;
+}
+
+.bggreen {
+    background-color: green;
+    color: white;
+}
+
+.colorcyan {
+    color: cyan;
+}
+
+.cross{
+    text-decoration: line-through;
+}
+
+
+section h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
