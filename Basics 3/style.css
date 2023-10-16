@@ -1,0 +1,115 @@
+/*
+    specificity : more specific element will always override the less specific element 
+    
+    order of specificity : !important > id > class > element
+
+    if u put !important to anything it will override and apply the changes no matter what !!
+    it will even override inline css
+    also
+
+    h2.header > .header   as it is more specific
+
+    use this rule :
+
+    !important |  id  |  class |  element
+    0          |  0   |    0   |     0
+*/
+
+
+/* 
+    .class:hover  -> used to define the state when we hover over the element
+    .class:focus  -> used to define the state when we click over the element
+    .class:disabled -> used to define the state when the element is disabled
+    .class:required  -> used to define the state when the element is required
+    .class/element:first-child -> used to apply property to the element/class given that is also a first child
+    .class/element:last-child  -> used to apply property to the element/class given that is also a last child
+
+    
+    .class/element:first-of-type  -> used to apply property to the element/class given that is also a first element of that type in the scope
+    
+    .class/element:last-of-type  -> used to apply property to the element/class given that is also a last element of that type in the scope
+    
+    .class/element:nth-child(even/odd/2n/etc. formula)  -> used to apply property to the element/class given that is nth child in scope
+
+    .class/element:nth-last-child(even/odd/2n/etc. formula)  -> used to apply property to the element/class given that is nth child in scope from last
+
+    .class/element:nth-of-type(even/odd/2n/etc. formula)  -> used to apply property to the element/class given that is also a nth element of that type in the scope
+    
+    .class/element:nth-last-of-type(even/odd/2n/etc. formula)  -> used to apply property to the element/class given that is also nth last element of that type in the scope
+*/
+
+
+/*
+    BOX MODEL :
+
+    text } padding } border } margin
+
+    margin collapse between two element and set to the maximum of both the element 
+    like if 20px , 30px then the margin between them will be 30px
+
+    margin:
+    border-width:
+    padding:      
+
+    all these can set like -> Top-right-bottom-left
+    
+    >>> computer section in chrome-dev-tools to see box model
+*/
+
+
+/*
+    border : width type(like solid) color
+    box-shadow : x-offset y-offset blur spread color
+    background : linear-gradient(to (direction), start color , end color)
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+.default {
+    font-size: medium;
+    padding: 0.5em;
+    margin:0.25rem;
+    border : 1px solid hsl(0, 0%, 70%);
+    border-radius: 0.2em;
+}
+
+.default:focus {
+    outline: none;
+    border-color: aqua;
+    box-shadow: 0 0 5px 0 aqua;
+}
+
+.default.success {
+    border : 1px solid green;
+}
+
+.default.success:focus {
+    outline: none;
+    border-color: green;
+    box-shadow: 0 0 5px 0 greenyellow;
+}
+
+.default.error {
+    border : 1px solid red;
+}
+
+.default.error:focus {
+    outline: none;
+    border-color: red;
+    box-shadow: 0 0 5px 0 red;
+}
+
+
+.large {
+    font-size: 1.3rem;
+}
+
+.small {
+    font-size: 0.8rem;
+}
+
+.dis {
+    background-color: hsl(0, 0%, 90%);
+}
