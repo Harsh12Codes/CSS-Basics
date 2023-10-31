@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*  
+    position:static   -----> default position
+    position:relative  ------> this will not move the element but make it relative means that other element take that start postion as the position of the element but the element can move left, right, top, bottom
+
+    position:absolute  ----> by using this we can make the element work on whole page not just on an element if u want to make the postion accourding to other parent element then make that relative.
+    
+
+    position:fixed   ----> this make the element stick to the screen where u put it even u scroll it remains at that same position
+
+    position:sticky   ----> this make the element stick where it is placed according to the screen but when even it get outs from the relative parents it doesn't stick anymore
+
+    **in fixed and absolute --> other element take the position of the element that is absolute like it is not there anymore
+
+
+
+    -----------------------------------------------------------------------------------------------------------------
+
+    z-index:value   -----> low value means that element will apear below the high value element
+
+    stacking content    ----> this is the property that parent that has higher z-index will overlap the whole parent2 even if parent2 children have higher z-index than parent1 
+
+
+
+    -----------------------------------------------------------------------------------------------------------------
+
+
+    COLUMN LAYOUT
+
+    column-count:value      --------> maximum column that can be formed
+    column-width:px         ----------> minimum width that a column should have
+    column-rule: 1px solid black            ---------> draw a ruler between column specified same as border
+    column-gap:px           ------------> gap that should column have between them
+    column-span: none/all       ----------> that element will take the space it need between the columns  if all    then between all columns 
+ 
+    column-fill: balance/auto   ----> balance will balance the space it take in the parent element but auto means it will fill it till bottom height then next row then next row
+
+
+    -----------------------------------------------------------------------------------------------------------------
+
+    overflow:hidden -------> hide the part that overflow 
+    overflow:scroll ------> add a scroll bar in both x and y axis
+    overflow:auto   --------> add scroll bar if needed in any direction
+    overflow-x: ----> for x axis only
+    overflow-y: -----> for y axis only 
+*/
