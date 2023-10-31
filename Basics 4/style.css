@@ -1,0 +1,16 @@
+/* 
+    float :(left/right) ->float property let the element stick to the side specified and the text will wrap around that element mostly used for images
+    
+    clear : ->it is used to ignore the float property and follow the flow of HTML document
+*/
+
+/*
+    FLEXBOX MODEL:
+
+    display:flex -> used to give the property of flex to all the direct children of the parent
+    (* margin doesn't collide when flex is used)
+    (* default direction will be row)
+
+
+    justify-content: ->this property is used to define the position of items on the flex axis
+*/
