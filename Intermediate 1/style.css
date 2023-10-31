@@ -1,0 +1,81 @@
+/*
+    :root {
+        --primary-variable   --> we can define custom variable using --sign
+        we can use them like ----> var(--primary-variable)
+
+        calc()  ----> function to calculate different arthmetic operation on units like 2px+2rem
+
+        we should use these variable and calc() function to make our css more simplified 
+
+        -------------------------------------------------------------------------------------------------------------
+
+        ADVANCE SELECTORS
+
+        div span {
+            all those span that are in a div are all will show this property
+        }
+
+        div > span {
+            all those span that are just the child of that div means only the spans that are in div not it's span 's children spans
+        } 
+
+        h2 ~ p {
+            all p tag that are sibling of h2 and comes after the h2 tag
+        }
+
+        h2 + p {
+            + means all p tag that are just after the sibling p tag are selected 
+            means p tag that are just after a h2 tag not all p tags
+        }
+
+        p:not(.red):not(.green) {
+            all p that are not of class red and green are selected
+        }
+
+        
+        input:not(:checked) {
+            all input that are not checked are selected
+        }
+
+        
+        input[type="checkbox"] {
+            all input that are of type checkbox are selected
+        }
+
+        input[type] ----> all input that have type attribute will be selected 
+
+        type*="fa"  -----> all tags that have attribute of type and has a value that contain this value will be selected
+        
+        type^="fa"  -----> all tags that have attribute of type and has a value that start with this value will be selected
+
+        type$="fa"  -----> all tags that have attribute of type and has a value that end with this value will be selected
+
+
+
+        ------------------------------------------------------------------------------------------------
+
+
+        PSEUDO SELECTORS
+
+        pseudo selectors doesn't work if there is no content
+
+
+        ::first-letter  ----> select first letter of content
+        ::first-line    ------> select the first line of content
+
+        ::before    -----> it comes before the element itself
+        ::after     -----> it comes just after the element
+
+        to have blank content: in before or after selector ----->  content:'';
+        
+        you can use attributes in pseudo selectors like content:attr(data-text);
+
+
+        
+
+
+
+        
+
+    }
+*/
